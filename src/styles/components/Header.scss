@@ -1,0 +1,34 @@
+@import "../core/variables.scss";
+@import "../core/mixins.scss";
+
+@font-face {
+  font-family: "HARRYP__.TTF";
+  src: url("../../fonts/HARRYP__.TTF") format("truetype");
+}
+
+.header {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    display: block;
+    margin-left: 10%;
+  }
+  &__title {
+    font-family: "HARRYP__.TTF", serif;
+    color: $mainColor;
+    font-size: 78px;
+    padding-top: 30px;
+    @include desktop {
+      font-size: 78px;
+      padding-top: 70px;
+    }
+    &--hiddenMob{
+      display: none;
+      @include tablet{
+        display: inline-block;
+      }
+    }
+  }
+}

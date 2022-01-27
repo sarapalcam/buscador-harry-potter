@@ -1,0 +1,47 @@
+@import './core/variables.scss';
+@import './core/mixins.scss';
+
+.App {
+  padding: 0 10%;
+  min-height: 100vh;
+  &__gryffindor {
+    background: linear-gradient(
+      $scdnColor,
+        $gryffDark,
+        $gryffMediumDark,
+        $gryffMediumLight,
+        $gryffLight
+    );
+  }
+  &__hufflepuff {
+    background: linear-gradient(
+      $scdnColor,
+        $huffDark,
+        $huffMediumDark,
+        $huffMediumLight,
+        $huffLight
+    );
+  }
+  &__ravenclaw {
+    background: linear-gradient(
+      $scdnColor,
+        $ravenDark,
+        $ravenMediumDark,
+        $ravenMediumLight,
+        $ravenLight
+    );
+  }
+  &__slytherin {
+    background: linear-gradient(
+      $scdnColor,
+        $slythDark,
+        $slythMediumDark,
+        $slythMediumLight,
+        $slythLight
+    );
+  }
+}
+
+.main {
+  min-height: calc(100vh - 300px);
+}
